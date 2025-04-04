@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Library Management System</h1>
+
+    <section id="books-section">
+        <h2>Books</h2>
+        <button onclick="fetchBooks()">Load Books</button>
+        <div id="books-list"></div>
+        
+        <h3>Add / Update Book</h3>
+        <input type="text" id="book-title" placeholder="Title">
+        <input type="text" id="book-author" placeholder="Author">
+        <input type="text" id="book-genre" placeholder="Genre">
+        <input type="number" id="book-year" placeholder="Published Year">
+        <button onclick="addBook()">Add Book</button>
+    </section>
+
+    <section id="members-section">
+        <h2>Members</h2>
+        <button onclick="fetchMembers()">Load Members</button>
+        <div id="members-list"></div>
+        
+        <h3>Add / Update Member</h3>
+        <input type="text" id="member-name" placeholder="Name">
+        <input type="date" id="member-date" placeholder="Membership Date">
+        <button onclick="addMember()">Add Member</button>
+    </section>
+
+    <script src="firebase-config.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
